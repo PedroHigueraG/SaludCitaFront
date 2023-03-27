@@ -1,0 +1,218 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-weight: bold;
+    font-size: 80px;
+}
+h3{
+    font-weight: 500;
+    font-size: 30px;
+}
+section{
+    min-height: 100vh;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.63);
+    width: 300px;
+}
+select{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.63);
+    width: 170px;
+}
+/* Index */
+.IconoInicio{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none;  
+    color: black; 
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+.IconoInicio img{
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+}
+.Inicio{
+    background-image: url(assets/fondoInicio.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.TextoInicio{
+    width: 40%;
+    padding-left: 50px;
+}
+.TextoInicio h3{
+    margin-top: 40px;
+}
+.InicioLogin{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #2684FF;
+    color: white;
+    border: solid 1px #2684FF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #2684FF;
+}
+.TarjetaLogin{
+    background-color: rgba(255, 255, 255, 0.76);
+    box-shadow: 0px 0px 5px 0px black;
+    width: 500px;
+    height: 600px;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.TarjetaLogin *{
+    margin: 10px;
+}
+
+/* Home */
+.grid{
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.76);
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    display: flex;
+}
+#admin{
+    height: 430px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#admin img{
+    filter: invert(99%) sepia(59%) saturate(0%) hue-rotate(72deg) brightness(114%) contrast(100%);
+    width: 100px;
+    margin: 10px;
+}
+#admin:hover > img{
+    filter: invert(41%) sepia(20%) saturate(3277%) hue-rotate(187deg) brightness(107%) contrast(108%);
+
+}
+.option{
+    display: block;
+    background-color: #2684FF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    height: 200px;
+    width: 160px;
+    text-align: start;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.option:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #2684FF;
+}
+.row1, .row2{
+    display: flex;
+}
+.option span{
+    text-align: end;
+}
+
+/* Agenda */
+#Agenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+}
+#Agenda h3{
+    color: #2684FF;
+    font-weight: bold;
+}
+#Agenda > *{
+    margin: 10px;
+}
+.details-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.datetime{
+    width: 150px;
+}
+.details{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.details > *{
+    margin: 10px 0;
+}
+.busqueda{
+    display: flex;
+    justify-content: center;
+}
+.busqueda input{
+    border-radius: 10px 0px 0px 10px;
+}
+.busqueda button{
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.63);
+    font-size: 15px;
+}
+.details label p{
+    margin-bottom: 15px;
+}
+/* Consultas */
+.consult-details{
+    padding: 25px;
+    background-color: #2684ff;
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    color: white;
+    text-align: center;
+}
+.consult-details p{
+    margin: 10px 0;
+}
+.consult-details img{
+    width: 100px;
+}
